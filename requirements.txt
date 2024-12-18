@@ -1,0 +1,1 @@
+dojo-compass==3.7.1
