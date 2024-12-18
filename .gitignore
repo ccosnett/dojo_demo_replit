@@ -1,6 +1,6 @@
 *.db
 *.python-version
-*.txt
+#*.txt
 poetry.lock
 pyproject.toml
 *.pyc
