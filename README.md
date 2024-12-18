@@ -4,9 +4,10 @@
 
 ```
 git clone https://github.com/ccosnett/free_sample_sim.git
+cd free_sample_sim
 pip install dojo-compass
-# install anvil
 curl -L https://foundry.paradigm.xyz | bash
 source /home/codespace/.bashrc
 foundryup --version nightly-ea7817c6679abc3bcfc476c20ced4fe6200d8928
+python ./short_sample_run.py
 ```
