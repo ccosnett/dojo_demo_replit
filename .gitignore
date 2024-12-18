@@ -1,0 +1,6 @@
+*.db
+*.python-version
+*.txt
+poetry.lock
+pyproject.toml
+*.pyc
