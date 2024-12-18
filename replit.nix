@@ -5,4 +5,7 @@
     pkgs.lsof
     pkgs.libsvm
   ];
+  shellHook = ''
+    alias pathe="echo $PATH"
+  '';
 }
