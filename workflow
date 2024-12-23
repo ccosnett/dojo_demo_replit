@@ -4,8 +4,8 @@ entrypoint = "README.md"
 [nix]
 channel = "stable-24_05"
 
-
 [workflows]
+runButton = "setup"
 
 [[workflows.workflow]]
 name = "setup"
