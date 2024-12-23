@@ -1,5 +1,4 @@
-modules = ["bash", "python-3.12", "nix"]
-run = "export PATH=$PATH:$REPL_HOME/.config/.foundry/bin && python ./short_sample_run.py"
+modules = ["bash", "nix", "nodejs-20", "python-3.12"]
 
 [nix]
 channel = "stable-24_05"
@@ -10,3 +9,19 @@ run = ["sh", "-c", "python ./short_sample_run.py"]
 [[ports]]
 localPort = 8768
 externalPort = 80
+
+[workflows]
+runButton = "RUN"
+
+[[workflows.workflow]]
+name = "RUN"
+mode = "parallel"
+author = 38459592
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "export PATH=$PATH:$REPL_HOME/.config/.foundry/bin && python ./short_sample_run.py"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "electron ./out/main/index.js --no-sandbox"
