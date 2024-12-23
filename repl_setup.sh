@@ -1,0 +1,1 @@
+git clone https://github.com/ccosnett/dojo_demo_replit.git && chmod +x ./dojo_demo_replit/install.sh && ./dojo_demo_replit/install.sh
