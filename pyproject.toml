@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "workspace"
+version = "0.1.0"
+description = ""
+authors = ["Conor Cosnett <conor@compasslabs.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.13, >=3.10"
+dojo-compass = "^3.8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,8 +1,6 @@
 *.db
 *.python-version
 #*.txt
-poetry.lock
-pyproject.toml
 *.pyc
 .vscode/settings.json
 dojo_demo_replit.code-workspace
